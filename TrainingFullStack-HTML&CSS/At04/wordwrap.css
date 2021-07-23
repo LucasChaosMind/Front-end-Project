@@ -1,0 +1,7 @@
+.atm{
+    width: 30vh;
+    height: 25vh;
+    /**usando o word-wrap break-word eu posso quebrar a palavra quando ela eceder o tamanho da div**/
+    word-wrap: break-word;
+    border: 4px solid black;
+}

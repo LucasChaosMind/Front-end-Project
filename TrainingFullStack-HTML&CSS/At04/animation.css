@@ -1,0 +1,37 @@
+.atm{
+    width: 25vh;
+    height:25vh;
+    background-color: darkcyan;
+    position: absolute;
+    animation-name:atm;
+    animation-delay: 1.5s;
+    animation-duration: 6s;
+    /**repetir 2 vezes*/
+    animation-iteration-count: 2;
+}
+@keyframes atm {
+    0%{
+        background-color: darkslategrey;
+        top:0;
+        left:0;
+    }
+    25%{
+        background-color: lightseagreen;
+        top: 0vh;
+        left:33vh
+    }
+    50%{
+        background-color: darkcyan;
+        top: 33vh;
+        left:33vh
+    }
+    75%{
+        background-color: dimgray;
+        top:33vh;
+        left:0vh
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}

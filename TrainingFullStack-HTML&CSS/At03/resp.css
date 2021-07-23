@@ -1,0 +1,55 @@
+:root{
+    --bg-color: rgb(46, 82, 128);
+    --bg-font: 'Impact';
+    --font-size: 25px
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    ;
+}
+body{
+    display: flex;
+    width:100vh;
+    height:100vh;
+}
+h1{
+    color: var(--bg-color);
+    font-family: var(--bg-font);
+    font-size: var(--font-size);
+}
+
+div{
+    height: 25vh;
+    width: 25vh;
+    border: 2px solid black;
+}
+@media (max-width: 450px){
+    :root{
+        --font-size: 15px;
+    }
+}
+@media (orientation: landscape){
+    body{
+        flex-direction:row;
+    }
+  
+}
+
+@media (orientation: portrait){
+    body{
+        flex-direction:column;
+    }
+}
+/*quando a tela estive com o dobre de lagura do que de altura se aplica o efeito*/
+@media (min-aspect-ratio:2/1){
+    body{
+        background-color: blueviolet;
+    }
+}
+/**quando a tela tiver a largura como metade da altura aplica se um efeito*/
+@media (max-aspect-ratio: 1/2){
+    body{
+        background-color: darkslategrey;
+    }
+}

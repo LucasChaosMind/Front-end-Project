@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Text</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+        <p class="t1"><a class="link1" href="https://google.com">The 19th annual Shanghai</a> Auto Show delivered a bevy of electric and tech-centric vehicles this year. Chinese, European and U.S. automakers showed off their latest offerings in every price segment, from the budget-minded ​​Wuling Hong Guang Mini via a joint venture between SAIC Motor Corp., General Motors Co. and Liuzhou Wuling Motors Co. to the luxury Mercedes EQS  — and everything in between.</p>
+        <p class="t2">Several automakers touted the capabilities of their driver assistance systems, using terminology that suggested they could be autonomous if only regulators allowed it. Let’s be clear, these systems are not autonomous. Other automakers stopped short of those claims, but did publicize the software capabilities of their vehicles — a movement that has been underway since Tesla rose in popularity.</p>
+        <p class="t3">Here’s what caught our eye at the show. Don’t miss TechCrunch’s Rita Liao’s Chinese automotive coverage that also came out of the auto show, including how Tesla is working on vehicles tailored to Chinese consumers as complaints increase about the quality of its electric vehicles.</p>
+
+        <ul>
+            <li class="l1">FUllStack + Mobile</li>
+            <li class="l2">Canada</li>
+            <li class="l3">Casamento</li>
+            <li class="l4">Setup</li>
+            <li class="l5">Investimentos & Ciência de dados</li>
+        </ul>
+        <!--thead é para quando vc usar um casalho e for grande a lista, ficar em todas as paginas o thead exemplo do pdf com o thead sendo impresso em todas as paginas-->
+        <!--tr coluna | td linha [ou o inverso ja que vc buga com linha e coluna] | th cabesalho-->
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Placa de Video</td>
+                    <td>R$: 3000</td>
+                </tr>
+                <tr>
+                    <td>Procesador</td>
+                    <td>R$:2000</td>
+                </tr>
+                <tr>
+                    <td>Placa Mãe</td>
+                    <td>R$:1000</td>
+                </tr>
+        </tbody>
+        </table>
+
+        <h2>Pesquisa no Google</h2>
+        <!--GET envia os valores direto na url-->
+        <form action="https://google.com/" method="GET">
+            <!--size e numero de qunatos pode se selecionar ed uma vez so e o multiple possibilita selecionar mais de um ao mesmo tempo-->
+            <select name="Order" size="2" multiple>
+                <!--value modifica o internamente é enviado | selected seleciona um como padrão, sem ele o padrao é o primeiro-->
+                <option value="id:1">Mais vendidos</option>
+                <option value="id:2" selected>Mais baratos</option>
+            </select>
+        
+        </form>
+        <h2>Area de Login</h2>
+        <!--POST ele envia os valores sem mostrar na url-->
+        <form method="POST">
+            <label>
+                Nome:
+                <br/> 
+                <input type="text" name="nome"value="nome"/>
+                <br/>
+                E-mail:
+                <br/>
+                <input type="email"name="email"/>
+                <br/>
+                Senha:
+                <br/> 
+                <input type="password"name="senha"/>
+            </label>
+            
+            <label name="checkbox">  
+                <input type="checkbox"name="termos"/>
+                Eu declaro que li e aceito os <a href="https:google.com"class="linkterm">termos de uso</a>
+            </label>
+            <label>
+                <input type="radio" name="Sexo"/>
+                <input type="radio" name="Sexo"/>
+                <input type="submit"/>
+            </label>
+            <label>
+                <input type="color"name="cor"/>
+                <input type="date"name="hora"/>
+                <input type="datetime-local"name="data e hora"/>
+                <input type="number"name="apenas numeros"/>
+                <input type="range"name="0-100 por exemplo"/>
+                <input type="search"name="busca"/>
+                <input type="tell"name="telefone"/>
+                <input type="time"name="hora"/>
+                <input type="week"name="mes"/>
+            </label>
+            <label>
+                <textarea name="text"></textarea>
+                <button>Hehee</button>
+            </label>
+            <label>
+                <label for="nomezin">Nome completo: </label><br/>
+                <input type="text" name="nome" id="nomezin"/>
+            </label>
+        </form>
+    </body>
+</html>

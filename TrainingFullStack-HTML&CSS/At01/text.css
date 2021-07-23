@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 25px;
+}
+p{
+    font-family: 'Original Surfer';
+    font-size: 1.5rem;
+}
+.t1{
+    /** text-align: tem center,left, e right e justify que é o texto preenchendo a diretia e a esquerda, serve para alinhar o texto a uma direção**/
+    text-align: justify;
+}
+.link1{
+    text-decoration: none;
+    color: black;
+}
+.link1:hover{
+    text-decoration: underline;
+    color: lightseagreen;
+}
+.link2{
+    /**modifica o texto**/
+    text-transform:uppercase;
+    /**modifica o espaço entre as letras do texto**/
+    letter-spacing: 2px;
+    /**modifica os espaço entres as palavras do texto**/
+    word-spacing: 4px;
+}
+.link3{
+    /**modifica a altura da linha*/
+    line-height: 25px;
+    /** primeiro valor o quanto a direita a sombra vai ficar, segundo quanto a baixo a sombra ira ficar, e terceiro o tamanho da sombra**/
+    text-shadow: 0px 2px 3px red;
+}
+l1{
+    list-style-type: none;
+}
+l2{
+    list-style-type:georgian;
+}
+table{
+    width: 40vh;
+}
+table thead{
+    background-color: darkcyan;
+}
+th{
+    font-weight: normal;
+}
+th, td{
+    padding:10px;
+    text-align: center;
+}
+tbody tr:hover{
+    background-color: dodgerblue;
+}
+
+label{
+    /**força tudo dentro de um imput virar seelhante a uma div. sendo um bloco**/
+    display: block;
+    margin-top: 1rem;
+}
+input[type=text],textarea,select,input[type=password],input[type="email"]{
+    padding: 0.5rem;
+    width: 20rem;
+    font-size: 0.7rem;
+    border: 1px solid black;
+    outline-color: blueviolet;
+}
+textarea{
+    height: 25px;
+    /**para o usuario não alterar o tamanho do campo de textarea**/
+    resize: none;
+}
+.linkterm{
+    /**para mecher na decoração ao clicar no link**/
+    color: black;
+    text-decoration: none;
+}
+.linkterm:hover{
+    text-decoration:underline;
+    color: blueviolet;
+}
+button{
+    position: absolute;
+    padding: 0.28rem;
+    text-align:center;
+    border:1px;
+}
+button:hover{
+    background-color: blueviolet;
+}

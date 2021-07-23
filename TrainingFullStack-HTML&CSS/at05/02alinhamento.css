@@ -1,0 +1,124 @@
+.container{
+    display: flex;
+    /**Habilita a quebra de linha quando ultrapassa o tamanho da tela**/ 
+    /**flex-wrap: wrap;**/
+    /**Com flex-flow vc trabalha com o alinhamento e com a quebra de linha ao mesmo tempo**/
+    flex-flow: row wrap;
+    margin: 4px;
+    }
+.container div{
+    width: 17%;
+    height:10%;
+    margin:4px;
+    padding: 10px;
+    font-size: 10px;
+    background-color: cadetblue;
+}
+.containertwo{
+    display: flex;
+    flex-flow: row wrap;
+    /**O conteudo vai ser justificado no centro do container**/
+    justify-content: center;
+    margin: 4px;
+}
+.containertwo div{
+    width: 15%;
+    height:10%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+    background-color: chartreuse;
+}
+.containerthree{
+    display:flex;
+    width: 100%;
+    height: 68vh;
+    background-color:mediumpurple;
+    flex-flow: row wrap;
+    /**Vai alinha na direção em que esta sendo exibida**/
+    justify-content:center;
+    /**Alinhar na direção contraria ao item, que nesse caso esta row[em linha]**/
+    align-items:center;
+    margin: 4px;
+}
+.containerthree div{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    margin:10px;
+    padding: 10px;
+    font-size: 10px;
+}
+.containerfour{
+    display:flex;
+    width: 100%;
+    height: 68vh;
+    background-color:mediumpurple;
+    flex-flow: row wrap;
+    /**Vai alinha na direção em que esta sendo exibida**/
+    justify-content:flex-start;
+    margin: 4px;
+}
+.containerfour div{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    margin:10px;
+    padding: 10px;
+    font-size: 10px;
+}
+.containerfive{
+    display:flex;
+    width: 100%;
+    height: 68vh;
+    background-color:mediumpurple;
+    flex-flow: row wrap;
+    /**Vai alinha na direção em que esta sendo exibida**/
+    justify-content:flex-end;
+    margin: 4px;
+    
+}
+.containerfive div{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    margin:10px;
+    padding: 10px;
+    font-size: 10px;
+}
+.containersix{
+    display:flex;
+    width: 100%;
+    height: 68vh;
+    background-color:mediumpurple;
+    flex-flow: row wrap;
+    /**Vai alinha na direção em que esta sendo exibida**/
+    justify-content:space-around;
+    margin: 4px;
+}
+.containersix div{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    margin:10px;
+    padding: 10px;
+    font-size: 10px;
+}
+.containerseven{
+    display:flex;
+    width: 100%;
+    height: 68vh;
+    background-color:mediumpurple;
+    flex-flow: row wrap;
+    /**Vai alinha na direção em que esta sendo exibida**/
+    justify-content:space-between;
+    margin: 4px;
+}
+.containerseven div{
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    margin:10px;
+    padding: 10px;
+    font-size: 10px;
+}

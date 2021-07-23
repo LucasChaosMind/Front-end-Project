@@ -1,0 +1,15 @@
+.atm{
+    margin:auto;
+    margin-top: 35vh;
+    width: 20vh;
+    height: 20vh;
+    background-color: rebeccapurple;
+    /**all para aplicar o efeito de transição a qualquer tipo de modificação feita**/
+    /** linear é para fazer a transição em velocidade constante/igual**/
+    transition: all 0.7s linear;
+}
+.atm:hover{
+    width: 35vh;
+    height: 20vh;
+    background-color: seagreen;
+}
