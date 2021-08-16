@@ -1,0 +1,10 @@
+.atm{
+    width: 25vh;
+    height: 25vh;
+    position: absolute;
+    left: 25vh;
+    top: 25vh;
+    background-color: dodgerblue;
+    /** distancia horizontalmente, distancia na vertical, esfumaçamento da sombra, cor da sombra**/
+    box-shadow: 10px 10px 10px palevioletred;
+}

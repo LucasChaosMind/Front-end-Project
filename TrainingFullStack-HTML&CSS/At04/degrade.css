@@ -1,0 +1,11 @@
+.atm{
+    background: blueviolet;
+    width: 25vh;
+    height: 25vh;
+    background: linear-gradient(-45deg,rgb(137, 19, 141), blueviolet);
+    /**para navegadores antigos*/
+    background: linear-gradient(-45deg,rgb(137, 19, 141), blueviolet);
+    background: -o-linear-gradient(-45deg,rgb(137, 19, 141), blueviolet);
+    background: -webkitlinear-gradient(-45deg,rgb(137, 19, 141), blueviolet);
+
+}

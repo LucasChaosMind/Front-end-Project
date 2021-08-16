@@ -1,0 +1,36 @@
+p{
+    color: teal;
+    font-size: 5vh;
+    border-top: dashed rgb(15,15,0);
+}
+#style01{
+    color: orangered;
+    font-size: 2.5vh;
+    border: 5px solid rgba(0, 25, 0, 1)
+    /*usando o id, vc pode alterar e usar a configuração so para esse componente*/
+}
+.style02{
+    color: steelblue;
+    font-size: 2.5vh;
+    border: 5px dashed rgba(0, 25, 0, 1)
+    /*mais usado se da uma classe que pode ser usada em mais de um componente*/
+}
+.style03, #style04{
+    color: turquoise;
+    font-size: 2vh;
+    
+}
+ol{
+    border: 5px dotted rgba(0, 25, 0, 1)
+}
+ol li{
+    color: teal;
+    font-size: 3vh;
+}
+button{
+    background-color: #40e0d0;
+    color: rgb(15,15,0);
+    border-top-color: 2rem rgba(0, 25, 0, 1);
+    border-radius: 2.5px;
+
+}

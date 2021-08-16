@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pag</title>
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <link rel="stylesheet" href="text[2].css"/>
+    </head>
+    <body>
+        <form method="POST" action="https:google.com" enctype="multipart/form-data">
+           <!--para enviar um dado por padrao e sem o usuario ver se usa o hidden-->
+            <input type="hidden" name="country" value="BR"/>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    Primeiro Nome:
+                    <br>
+                    <input type="text"name="name" required minlength="2" maxlength="9"/>
+                </label>
+                <br>
+                <label>
+                    Sobrenome:
+                    <br>
+                    <input type="text"name="lastname" required/>
+                </label>
+                <br>
+                <label>
+                    E-mail:
+                    <br>
+                    <input type="text"name="email" required pattern="([a-zA-Z0-9@\.])"title="Glub Glub"/>
+                </label>
+                <br>
+                <label>
+                    Data de nascimento:
+                    <br>
+                    <input type="date"name="age" required min="2003-05-01"/>
+                </label>
+                <br>
+                <label>
+                    Foto:
+                    <br>
+                    <input type="file"name="photo" accept="image/*"/>
+                </label>
+                <br>
+                <label>
+                    Curriculo:
+                    <br>
+                    <input type="file"name="jobskills" accept="application/pdf"/>
+                </label>
+            </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Dados Profissionais</legend>
+                    <label>
+                        Nome da empresa:
+                        <br>
+                        <input type="text",name="company">
+                    </label>
+                    <br>
+                    <label>
+                        Cargo na empresa:
+                        <br>
+                        <input type="text"name="job">
+                    </label>
+                </fieldset>
+                    <br>
+                    <button name="go">Cadastrar</button>
+                </form>
+            </body>
+            </html>

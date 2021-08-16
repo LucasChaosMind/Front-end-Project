@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+img{
+    height: 400px;
+    width: 400px;
+    /**manter a proporção da imag mas cortar a img*/
+    object-fit: cover;
+}
+body{
+    background-color: black;
+    display: flex;
+}
+
+@media (min-width:1000px){
+    body{
+        background-color:cadetblue;
+    }
+}
+@media (min-width: 700px) and (max-width:999px){
+    body{
+        background-color: lightseagreen;
+    }
+}
+@media (max-width: 600px){
+    body{
+        background-color: blueviolet;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+}
+@media only print{
+    h1{
+        font-size: 15rem;
+        font-family: 'courier new';
+    }
+}
