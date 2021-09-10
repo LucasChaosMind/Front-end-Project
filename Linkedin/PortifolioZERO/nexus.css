@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 :root{
     --upcolor: #39ff14;
+    --back : #171717;
 }
 *{
     padding: 0;
@@ -25,6 +26,26 @@ img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+p{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.section-title span{
+    color: var(--upcolor);
 }
 /*Hero Section*/
 #hero{
@@ -112,7 +133,7 @@ img{
 
 /*Services Section*/
 #services{
-   background-color: #171717;
+   background-color: var(--back);
 }
 #services .service{
     flex-direction: column;
@@ -121,26 +142,8 @@ img{
     margin: 0 auto;
     padding: 75px 0;
 }
-#services .section-title{
-    font-size: 4rem;
-    font-weight: 300;
-    color: white;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    text-align: center;
-} 
-#services .section-title span{
-    color: var(--upcolor);
-}
-#services .service-top p{
-    color: #fff;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    margin-bottom: 45px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
+.service-top{
+    margin-bottom: 35px;
 }
 .service-bottom{
     display: flex;
@@ -148,39 +151,22 @@ img{
     justify-content: center;
     flex-wrap: wrap;
 }
-/*
 .service-item{
-    flex-basis: 80%;
+    /*flex-basis: 80%;*/
+    width: 520px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
     border-radius: 0px 15px;
-    border: 2px solid var(--upcolor);
-    background-image: url(img/img-lang.jpg);
-    background-size: cover;
-    margin: 10px 5%;
-    position: relative;
-    z-index: 1;
-}*/
-
-.service-item{
-    flex-basis: 80%;
-    display: flex;
-    justify-content:space-around;
-    align-items: flex-start;
-    flex-direction: row;
-    padding: 30px;
-    border-radius: 0px 15px;
-    border: 2px solid var(--upcolor);
+    box-shadow: 2px 2px var(--upcolor);
     background-image: url(img/img-lang.jpg);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
 }
-
 
 .service-item::after{
     content: '';
@@ -197,6 +183,7 @@ img{
     height: 64px;
     width: 64px;
     margin-bottom: 20px;
+    margin-right: 25px;
 }
 .service-item h2{
     font-size: 2rem;
@@ -204,14 +191,22 @@ img{
     margin-bottom: 10px;
     text-transform: capitalize;
 }
-.service-item p{
-    color: #fff;
-    text-align: left;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
+.nex{
+    border: 1px solid var(--upcolor);
+    padding: 2px 15px;
 }
 /*End Services Section*/
 
+/*Pojects Section*/
+#projects{
+    background-color:var(--back);
+}
+#projects .projects{
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 100px 0;
+}
+/*End Pojects Section*/
 
 /*KeyFrames*/
 @keyframes text_revealing_box {
