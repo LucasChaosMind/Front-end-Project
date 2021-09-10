@@ -16,7 +16,7 @@ a{
     text-decoration: none;
 }
 .container{
-    min-height: 100vh;
+   min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -154,6 +154,7 @@ p{
 .service-item{
     /*flex-basis: 80%;*/
     width: 520px;
+    /*min-width: 340px;*/
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -198,13 +199,72 @@ p{
 /*End Services Section*/
 
 /*Pojects Section*/
-#projects{
+#project{
     background-color:var(--back);
 }
-#projects .projects{
+#project .project{
     flex-direction: column;
     max-width: 1200px;
     padding: 100px 0;
+    margin: 0 auto;
+}
+.project-header h1{
+    margin-bottom: 50px;
+}
+.all-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 25%;
+    margin: 15px auto;
+    overflow: hidden;
+    background-image: url(./img/project.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 0 15px;
+    box-shadow: 2px 2px var(--upcolor);
+    z-index: 1;
+}
+.project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 15px;
+    z-index: -1;
+}
+.project-info h1{
+    font-size: 1.8rem;
+    color: var(--upcolor);
+}
+.go{
+    margin-top: 15px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 2px 10px;
+    color: var(--upcolor);
+    text-shadow: 0.5px 1px var(--upcolor);
+    border: 1px solid var(--upcolor);
+}
+.go:hover{
+    color: #fff;
+    text-shadow: 1px 1px #fff;
+    background-color: var(--upcolor);
 }
 /*End Pojects Section*/
 
@@ -231,3 +291,11 @@ p{
     }
 }
 /*End Keyframes*/
+
+/*Media*/
+@media (max-width: 400px) {
+    .service-item{
+        max-width: 340px;
+    }
+}
+/*End Media*/
