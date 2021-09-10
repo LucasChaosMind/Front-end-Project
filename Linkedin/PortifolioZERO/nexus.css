@@ -21,6 +21,11 @@ a{
     align-items: center;
     justify-content: center;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 /*Hero Section*/
 #hero{
     background-image: url('./img/hero-bg.png');
@@ -114,7 +119,7 @@ a{
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 45px 0;
+    padding: 75px 0;
 }
 #services .section-title{
     font-size: 4rem;
@@ -143,6 +148,7 @@ a{
     justify-content: center;
     flex-wrap: wrap;
 }
+/*
 .service-item{
     flex-basis: 80%;
     display: flex;
@@ -155,9 +161,55 @@ a{
     background-image: url(img/img-lang.jpg);
     background-size: cover;
     margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+}*/
 
+.service-item{
+    flex-basis: 80%;
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 0px 15px;
+    border: 2px solid var(--upcolor);
+    background-image: url(img/img-lang.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
 }
 
+
+.service-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient(45deg,#171717 45%,var(--upcolor) 65%);
+    opacity: 0.5;
+    z-index: -1;
+}
+.service-bottom .icon{
+    height: 64px;
+    width: 64px;
+    margin-bottom: 20px;
+}
+.service-item h2{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.service-item p{
+    color: #fff;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
 /*End Services Section*/
 
 
