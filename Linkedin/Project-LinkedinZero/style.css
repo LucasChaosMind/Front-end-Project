@@ -45,7 +45,7 @@ nav .one a, nav a:hover{
     color: #ffffff;
 }
 .banner{
-    background-image: url("../Project-LinkedinZero/img1.jpg");
+    background-image: url("img/img1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     image-resolution: cover;
