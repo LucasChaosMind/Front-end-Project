@@ -1,0 +1,72 @@
+:root{
+    --clr-neon: #fd00da;
+    --clr-bg: hsl(323, 21%, 16%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url('img/bitcoin-blue.png');
+    background-size: cover;
+}
+header {
+    overflow: hidden;
+    /*limitar o tamanho para não aceder a do navegador*/
+}
+nav{
+    width: 100%;
+}
+.logo{
+    margin-left: 60px;
+}
+img{
+    background-color: #fff;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+li{
+    display: inline;
+    list-style: none;
+}
+.neon-button{
+    margin: 0 22px;
+    padding: 2px 22px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.neon-button:hover{
+    opacity: 1;
+    color:var(--clr-neon);
+    text-shadow:1px 0.8px red;
+}
+.signup{
+    position: absolute;
+    /*top: 28%;*/
+    right: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-image: radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+    opacity: 0.82;
+}
+.signup:hover{
+    opacity: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: none;
+}
+.signup span{
+    display: block;
+    padding: 4px 22px;
+}
