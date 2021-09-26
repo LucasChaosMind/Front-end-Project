@@ -8,10 +8,6 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
-    user-select: none;
 }
 .container{
     height: 100vh;
@@ -23,14 +19,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 #thelogin{
     height: 450px;
     width: 400px;
     background-color: #0a0a0a;
-    opacity: 0.94;
-    position: relative;
-    z-index: 2;
+    opacity: 0;
+    animation: start 3.5s ease forwards;
     box-shadow: 3px 3px 2px var(--colorprimary);
 }
 .login{
@@ -52,7 +48,7 @@
     position: absolute;
     margin: 20px;
 }
-.login h3{
+.login h2{
     color: var(--colorsecundary);
     font-family: var(--font-primary);
     font-size: 1.1rem;
@@ -89,7 +85,48 @@
     background-color: var(--colorsecundary);
     box-shadow: 2px 2px #efefef;
 }
-@media(max-width: 450px){
+.login .dev{
+    color: var(--colorprimary);
+    font-size: 0.8rem;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+}
+
+@keyframes start {
+    0%{
+        
+    }
+    100%{
+        opacity: 0.88;
+    }
+}
+@media (min-width: 490px) and (max-width:780){
+    #thelogin{
+        height:70%;
+        width: 80vw;
+    }
+    .login h1{
+        font-size: 4rem;
+    }
+    .login h2{
+        font-size: 2rem;
+    }
+    .login input{
+        height: 2rem;
+        width: 290px;
+    }
+    .forgot{
+        font-size: 1.4rem;
+    }
+    .cta{
+        font-size: 1.8rem;
+    }
+    .login .dev{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width: 480px){
     
     #thelogin{
         height: 70%;
@@ -102,7 +139,7 @@
     .login h1{
         font-size: 3rem;
     }
-    .login h3{
+    .login h2{
         font-size: 1.5rem;
     }
     .login input{
