@@ -345,6 +345,7 @@ footer h4{
     }
     .nav-links{
         position: absolute;
+        display: none;
         background: var(--upcolor);
         height: 100vh;
         width: 200px;
