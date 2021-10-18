@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Project</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #171717;
+            color: #fff;
+            flex-direction: column;
+        }
+        #ex{
+            font-size: 20px;
+            text-align: center;
+        }
+        #cta{
+            margin-top: 20px;
+        }
+        .verde{
+            
+            color: #37f731;
+        }
+        .azul{
+            color: #0079f9;
+        }
+        .vermelho{
+            color: crimson; 
+        }
+        .violet{
+            color: darkviolet;
+        }
+        button{
+            padding: 2px 8px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+        #x1:hover{
+            background-color: #37f731;
+        }
+        #x2:hover{
+            background-color: #0079f9;
+        }
+        #x3:hover{
+            background-color: crimson;
+        }
+        img{
+            margin: 25px;
+            width: 35%;
+            image-resolution: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="go">
+        <h3 id="ex">Lucas C. Bresolino</h3>
+        <button id="x1"onclick="verde()">Verde</button>
+        <button id="x2"onclick="azul()">Azul</button>
+        <button id="x3" onclick="vermelho()">Vermelho</button>
+    </div>
+    <div class="goo">
+        <button id="cta" onclick="cta()">Go!</button>
+    </div>
+    <img src="img/frorest.jpg" class="img">
+    <button id="ignit" onclick="ignitImg('frorest.jpg')">Frorest</button>
+    <button id="ignit" onclick="ignitImg('cyber.jpg')">City</button>
+</body>
+    <script language="javascript">
+        function verde(){
+            document.querySelector('#ex').classList.remove('azul');
+            document.querySelector('#ex').classList.remove('vermelho');
+            document.querySelector('#ex').classList.add('verde');
+        }
+        function azul(){
+            document.querySelector('#ex').classList.remove('verde');
+            document.querySelector('#ex').classList.remove('vermelho');
+            document.querySelector('#ex').classList.add('azul');
+        }
+        function vermelho(){
+            document.querySelector('#ex').classList.remove('verde');
+            document.querySelector('#ex').classList.remove('azul');
+            document.querySelector('#ex').classList.add('vermelho');
+        }
+        function cta(){
+            if(document.querySelector('#cta').classList.contains('violet')){
+                document.querySelector('#cta').classList.remove('violet');
+                document.querySelector('#cta').classList.add('azul');
+            }
+            else if(document.querySelector('#cta').classList.contains('azul')){
+                document.querySelector('#cta').classList.remove('azul');
+                document.querySelector('#cta').classList.add('verde');
+            }
+            else if(document.querySelector('#cta').classList.contains('verde')){
+                document.querySelector('#cta').classList.remove('verde');
+                document.querySelector('#cta').classList.add('vermelho');
+            }
+            else{
+                document.querySelector('#cta').classList.remove('vermelho');
+                document.querySelector('#cta').classList.add('violet');
+            }
+        }
+        function ignitImg(filename){
+            document.querySelector('.img').setAttribute('src','img/'+filename);
+        }
+    </script>
+</html>
