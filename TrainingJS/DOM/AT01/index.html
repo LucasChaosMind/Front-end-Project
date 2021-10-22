@@ -73,6 +73,7 @@
     <img src="img/frorest.jpg" class="img">
     <button id="ignit" onclick="ignitImg('frorest.jpg')">Frorest</button>
     <button id="ignit" onclick="ignitImg('cyber.jpg')">City</button>
+    <button id="ignit" onclick="imgName()">Name?</button>
 </body>
     <script language="javascript">
         function verde(){
@@ -110,6 +111,15 @@
         }
         function ignitImg(filename){
             document.querySelector('.img').setAttribute('src','img/'+filename);
+        }
+        function imgName(){
+            let img = document.querySelector('.img').getAttribute('src');
+            alert(img);
+            if(img === 'img/frorest.jpg'){
+                document.querySelector('.img').setAttribute('src','img/cyber.jpg');
+            }else{
+                document.querySelector('.img').setAttribute('src','img/frorest.jpg');
+            }
         }
     </script>
 </html>

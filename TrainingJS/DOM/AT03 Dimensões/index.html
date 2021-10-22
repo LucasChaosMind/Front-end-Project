@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimenções</title>
+    <style>
+        .text{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid #ff33e7;
+            overflow: auto;
+            background-color: darkgrey;
+        }
+        body{
+            min-height: 250vh ;
+            background-color: #212121;
+        }
+        .btn{
+            padding: 25px;
+            border-radius: 10px;
+            background-color: transparent;
+            color: #ff33e7;
+            border: 2px solid #ff33e7;
+            position: fixed;
+            bottom: 15px;
+            right: 30px;
+            z-index: 25;
+            cursor: pointer;
+        }
+        .o{
+            right: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text">
+        Microsoft explains that before this update arrived, the Xbox Series X dashboard and menus (including the Xbox Guide) were rendered in 1080p and then upscaled to 4K. While that might look decent enough, it’s no replacement for a proper 4K dashboard, and that’s exactly what we’re getting today. When you connect your Xbox Series X to a 4K display after applying the update, you’ll see the dashboard and all of its parts rendered in native 4K, with Microsoft saying that game art and buttons will “have increased sharpness and improved text readability” as well.
+    </div>
+    <button class="btn" onclick="topp()">Top</button>
+    <button class="btn o" onclick="Top()">Top++</button>
+</body>
+    <script>
+        /*Calcula o tamanho total, do elemento. Como largura,scroll bar, padding, borda*/
+        alert('Width: '+document.querySelector('.text').offsetWidth);
+        alert('Height: '+document.querySelector('.text').offsetHeight);
+        /*Calcula apenas 2 opções. A largura  e padding sem o scroll bar*/
+        alert('Client W: '+document.querySelector('.text').clientWidth);
+        alert('Client H: '+document.querySelector('.text').clientHeight);
+        /*Clacula o Tamanho total do Conteudo Completo*/
+        alert('Scroll W: '+document.querySelector('.text').scrollWidth);
+        alert('Scroll H: '+document.querySelector('.text').scrollHeight);
+        
+        /*Para ver barra de rolagem do site*/
+        alert(window.scrollY);
+        document.querySelector('.text').scrollTo(0,125);
+        /*Ponteiro para subir a tela*/
+        function topp(){
+            window.scrollTo(0,0);
+        }
+        function Top(){
+            window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior:"smooth"
+                })
+        }
+
+    </script>
+</html>
