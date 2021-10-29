@@ -19,6 +19,7 @@
             background-color: #212121;
         }
         .btn{
+            display: none;
             padding: 25px;
             border-radius: 10px;
             background-color: transparent;
@@ -60,6 +61,7 @@
         function topp(){
             window.scrollTo(0,0);
         }
+        /*Subir tela devagar*/
         function Top(){
             window.scrollTo({
                     top: 0,
@@ -67,6 +69,17 @@
                     behavior:"smooth"
                 })
         }
-
+        function showTheBtn(){
+            if(window.scrollY === 0){
+                //ocultar o botão
+                document.querySelector('.btn').style.display = 'none';
+                document.querySelector('.o').style.display = 'none';
+            }else{
+                //mostrar o botão
+                document.querySelector('.btn').style.display = 'block';
+                document.querySelector('.o').style.display = 'block';
+            }
+        }
+        window.addEventListener('scroll',showTheBtn);
     </script>
 </html>

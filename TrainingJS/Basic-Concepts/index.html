@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title" onmouseover="this.style='color: #33fe73;'" onmouseout="this.style='color: #fff;'">Welcome to My Website</h1>
+    <input onkeyup="this.style='box-shadow: 0 0 12px #34fe34;', passacom(event)" onkeydown="this.style='box-shadow: 0 0 12px #3434fe;'" id="at" type="text" name="user" value="Username"/>
+    <button onclick="clickOnButtom(), this.innerHTML='Stand'">Go!</button>
+    <div class="on" onmouseover="this.innerHTML='Inside'"onmouseout="this.innerHTML='Out'" onclick="this.innerHTML='Click'">Wait</div>
+    <ul>
+        <li>Zero</li>
+        <li>One</li>
+        <li>Two</li>
+    </ul>
+</body>
+    <script>
+        function clickOnButtom(){
+            alert("Don't Click in this button !");
+            document.getElementById('title').innerHTML ='Go! :3';
+        }
+        //Mostrar o keyCode que voce digitar. keCode e como um codigo ASCII
+        function passacom(e){
+            alert(e.keyCode);
+        }
+        /*Objetos em Js*/
+        let carro ={
+            nome: 'March',
+            modelo: 'Nissan',
+            pesso: '800kg',
+            ligar:function(){
+                alert('System as started: '+this.nome);
+            },
+        }
+        carro.ligar();
+        //Array de objetos
+        let carros = [
+            {nome:'March',marca:'Nissan'},
+            {nome:'Argo',marca:'Fiat'}
+        ]
+        //switch em Js
+        switch(carro.pesso){
+            case '800kg':
+                alert("Ok!");
+                break;
+            case '750kg':
+                alert('Goo!');
+                break;
+        }
+        //For em Js
+         nome = ["Lucas","Leticia","Maria"];
+
+        for(let i=0;i<5;i++){
+            alert(i);
+        }
+        for(let i in nome){
+            alert(nome[i]);
+        }
+        //While em Js
+        let i = 0
+        while(i<3){
+            console.log(i);
+            i++;
+        }
+        //Selecionando todos os LI usando querySelectorAll
+        let list = document.querySelectorAll('li');
+        list[1].innerHTML="X";
+    </script>
+</html>
