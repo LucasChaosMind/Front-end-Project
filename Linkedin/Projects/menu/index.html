@@ -13,22 +13,22 @@
         <div class="logo-content">
             <div class="logo">
                 <i class='bx bxs-ghost'></i>
-                <div class="logo-nome">CodingLab</div>
+                <div class="logo-nome">ChaosMind</div>
             </div>
-            <i class='bx bx-menu-alt-left' id="btn" ></i>
+            <i class='bx bx-menu-alt-left' id="btn" onclick="openAndClose()" ></i>
         </div>
         <ul class="nav-list">
             <li>
-                <i class='bx bx-search' ></i>
+                <i class='bx bx-search' onclick="openAndClose()"></i>
                 <input type="text" placeholder="Search.."/>
-                <span class="tooltip">Search</span>
+                <div class="tooltip out">Search</div>
             </li>
             <li>
                 <a href="#">
                     <i class='bx bxs-dashboard' ></i>
-                    <span class="links-name">Dashboard</span>
+                    <span class="links-name">Projects</span>
                 </a>
-                <span class="tooltip">Dashboard</span>
+                <span class="tooltip">Projects</span>
             </li>
             <li>
                 <a href="#">
@@ -67,13 +67,15 @@
                         <div class="name">Lucas C. Bresolino</div>
                         <div class="job">Web developer</div>
                     </div>
-                    <i class='bx bxs-heart' id="love"></i>
                 </div>
+                <i class='bx bxs-heart' id="love"></i>
             </div>
         </div>
     </div>
-    <div class="home-content">
-        <div class="text">Home</div>
-    </div>
 </body>
+    <script>
+        function openAndClose(){
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
 </html>
