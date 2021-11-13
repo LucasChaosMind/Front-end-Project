@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 .container{
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     width: 100%;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@ p{
 .section-title span{
     color: var(--upcolor);
 }
-/*Hero Section*/
+/* Hero Section */
 #hero{
     background-image: url('./img/hero-bg.png');
     background-size: cover;
@@ -133,9 +133,9 @@ p{
     background-color: var(--upcolor);
     box-shadow:  2.5px 2px #fff;
 }
-/*End Hero Section*/
+/* End Hero Section */
 
-/*Services Section*/
+/* Services Section */
 #services{
    background-color: var(--back);
 }
@@ -199,9 +199,9 @@ p{
     border: 1px solid var(--upcolor);
     padding: 2px 15px;
 }
-/*End Services Section*/
+/* End Services Section */
 
-/*Pojects Section*/
+/* Pojects Section */
 #project{
     background-color:var(--back);
 }
@@ -273,11 +273,53 @@ p{
     text-shadow: 1px 1px #fff;
     background-color: var(--upcolor);
 }
-/*End Pojects Section*/
+/* End Pojects Section */
 
-/*Section future Tecnologies*/
-/*End Section future Tecnologies*/
-
+/* Section Future Tecnologies */
+#future .future{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0;
+    padding: 75px 0;
+}
+.future-tec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.future-item{
+    flex-basis: 35%;
+    
+    display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(img/future.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 5%;
+    animation: light 12s linear infinite;
+}
+.future-item .icon{
+    height: 84px;
+    width: 84px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    z-index: 2;
+}
+.future-item .nexx{
+    padding: 2px 15px;
+}
+.nexx p{
+    animation: color-nexx 12s linear infinite;
+}
+/* End Section Future Tecnologies */
 
 /*Section About*/
 /*
@@ -340,12 +382,9 @@ p{
     border: 7px solid var(--upcolor);
     z-index: -1;
 }
-/*End Section About*/
+/* End Section About */
 
-/*Section Contact*/
-#contact{
-    /*padding-top: 100px;*/
-}
+/* Section Contact */
 #contact .contact{
     flex-direction: column;
     max-width: 1200px;
@@ -388,8 +427,18 @@ p{
     background-color: var(--upcolor);
     box-shadow:  2.5px 2px #fff;
 }
-/*ENd Section Contact*/
-/*KeyFrames*/
+footer{
+    text-align: center;
+    height: 80px;
+    width: 100%;
+}
+footer h3{
+    margin-top: 45px;
+    color: var(--upcolor);
+    font-size: 1.2rem;
+}
+/* End Section Contact */
+/* KeyFrames */
 @keyframes text_revealing_box {
     50%{
         width: 100%;
@@ -411,10 +460,25 @@ p{
         font-weight: 500;
     }
 }
-/*End Keyframes*/
+@keyframes light {
+    25%{
+        box-shadow: 0 0 6px var(--upcolor);
+    }
+    75%{
+        box-shadow: 0 0 6px #993399;
+    }
+}
+@keyframes color-nexx{
+    25%{
+        color: var(--upcolor);
+    }
+    75%{
+        color: #993399;
+    }
+}
+/* End Keyframes */
 
-/*Media*/
-/**media for 450 a 700*/
+/** Media for 450px */
 @media (max-width: 450px){
     #hero h1{
         font-size: 2.6rem;
@@ -432,6 +496,9 @@ p{
     }
     .service-item{
         max-width: 100vw;
+    }
+    .section-title{
+        font-size: 3.2rem;
     }
     .contact-items{
         flex-direction: column;
@@ -454,7 +521,13 @@ p{
     }
     p{
         font-size: 1.4rem;
-    } 
+    }
+    .future-tec{
+        flex-direction: column;
+        
+    }
+    .future-item{
+        width: 75%;
+    }
 }
-
-/*End Media*/
+/* End Media */
