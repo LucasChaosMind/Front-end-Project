@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #303030;
+    height: 200px;
+    width: 100%;
+    
+    display: flex;
+    
+    /*Direção do conteudo*/
+    flex-direction: row;
+    
+    /*Quebra de linha caso o valor exceda o tamanho limite*/
+    flex-wrap: nowrap;
+    
+    /*Faz o flex-direction e o flex-wrap ao mesmo tempo*/
+    flex-flow: row nowrap;
+    
+    /*Alinhamento horizontal*/
+    justify-content: flex-start;
+    
+    /*Alinhamento vertical*/
+    align-items: stretch;
+
+    /*Alinhamento vertical, quando itens tivrem quebra de linha*/
+    align-content: stretch;
+
+
+}
+.item{
+    background-color: #3f3fd9;
+    color: #303030;
+    text-align: center;
+    height: calc(35% - 5px);
+    /*width: calc(25vw - 4px);*/
+    margin: 0;
+    
+    /*Define o tamanho do item*/
+    flex-grow: 1;
+
+    /*Define quantas vezes memor o item sera*/
+    flex-shrink: 1;
+
+    /*Define a largura inicial de um item*/
+    flex-basis: 40%;
+
+    /*flex-grow - flex-shrink - flex-basis*/
+    flex: 1 1 40%;
+
+}
+.a1{
+    /*Coloca a ordem de exibção do item*/
+    order: 4;
+
+    /*!importante!*/
+    /*Faz alinhamento vertical caso seja flex-direction: row. Caso seja Colum faz alinhamento horizontal*/
+    align-self: center;
+    /*Define se q o tamano do 'a1' seja 3x menor que do outros elementos*/
+    flex-shrink: 3;
+}
+.a2{
+    /*Coloca a ordem de exibção do item*/
+    order: 3;
+}
+.a3{
+    /*Coloca a ordem de exibção do item*/
+    order: 2;
+
+    /*!importante!*/
+    /*Faz alinhamento vertical caso seja flex-direction: row. Caso seja Colum faz alinhamento horizontal*/
+    align-self: flex-end;
+}
+.a4{
+    /*Coloca a ordem de exibção do item*/
+    order: 1;
+    
+    /*Define o tamanho do item expecifico*/
+    flex-grow: 0;
+}
