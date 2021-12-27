@@ -107,29 +107,28 @@ h3{
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse; 
+    flex-wrap: wrap-reverse;
+    flex-grow: 1;
+    justify-content: center; 
 }
 .protuct{
-    flex-grow: 1;
     flex-basis: 23%;
     position: relative;
     margin: 45px;
     height: 220px;
     border-radius: 8px;
-   background: #00000022
+    /*background: #00000022;*/
 }
 .protuct img{
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    opacity: 1;
 }
 .protuct h4{
     color: transparent;
     font-size: 1.6rem;
     position: absolute;
     top: 20%;
-    left: 0;
     transition: 1.2s;
 }
 .protuct p{
@@ -137,7 +136,7 @@ h3{
     font-size: 1.4rem;
     position: absolute;
     bottom: 0;
-    left: 25%;
+    margin: 0 15%;
     transition: 0.8s;
 }
 .protuct:hover{
@@ -145,7 +144,7 @@ h3{
 }
 .protuct:hover h4{
     color: #ff0029;
-    left: 25%;
+    padding: 0 20%;
 }
 .protuct:hover p{
     color: #3de7f2;
