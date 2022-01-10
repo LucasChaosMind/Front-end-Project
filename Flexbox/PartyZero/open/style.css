@@ -111,7 +111,7 @@ h3{
     flex-grow: 1;
     justify-content: center; 
 }
-.protuct{
+.product{
     flex-basis: 23%;
     position: relative;
     margin: 45px;
@@ -119,19 +119,20 @@ h3{
     border-radius: 8px;
     /*background: #00000022;*/
 }
-.protuct img{
+
+.product img{
     width: 100%;
     height: 100%;
     border-radius: 8px;
 }
-.protuct h4{
+.product h4{
     color: transparent;
     font-size: 1.6rem;
     position: absolute;
     top: 20%;
     transition: 1.2s;
 }
-.protuct p{
+.product p{
     color: transparent;
     font-size: 1.4rem;
     position: absolute;
@@ -139,14 +140,14 @@ h3{
     margin: 0 15%;
     transition: 0.8s;
 }
-.protuct:hover{
+.product:hover{
     box-shadow: 0 0 8px #181818;
 }
-.protuct:hover h4{
+.product:hover h4{
     color: #ff0029;
     padding: 0 20%;
 }
-.protuct:hover p{
+.product:hover p{
     color: #3de7f2;
     bottom: 20%;
 }

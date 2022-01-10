@@ -4,12 +4,13 @@ a{
 html{
     margin:20px;
 }
-/*Selecionar o primeira e ultima div, mas so funciona em navegadores padroes*/
 div{
     width: 100px;
     height: 100px;
     background-color: darkslategray;
 }
+
+/*Selecionar o primeira e ultima div, mas so funciona em navegadores padroes*/
 div:first-child{
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
@@ -18,6 +19,7 @@ div:last-child{
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
 }
+
 /*Seleciona todas as div menos a .not*/
 div:not(.not){
     border: 4px solid #eeaa33;
@@ -25,26 +27,32 @@ div:not(.not){
 h3:nth-of-type(2){
     background-color: deeppink;
 }
+
 /*Seleciona o link que começa com http*/
 a[href^="http:"]{
     color: #3dfe43;
 }
+
 /*Seleciona algo com o valor google em link*/
 a[href*="google"]{
     background-color: cadetblue;
 }
+
 /*Seleciona algo que termina com br*/
 a[href$="br"]{
     border:2px solid #3f41ea;
 }
+
 /*Seleciona apartir do name*/
 [name="email"]{
     background-color: cornflowerblue;
 }
+
 /*Seleciona partir do type*/
 [type=password]{
     background-color: darkslateblue;
 }
+
 /*busco um p que esta vazio e faço alterações nele*/
 p:empty{
     background-color: crimson;
