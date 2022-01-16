@@ -7,8 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-size: 10px;
     font-family: 'Montserrat', Arial;
+}
+::selection{
+    color: var(--primary);
+    background-color: #000;
 }
 header{
     height: 100px;
@@ -119,7 +124,7 @@ header{
     width: 100%;
    box-shadow: 0 0 4px var(--primary);
 }
-.banner a{
+.btn{
     display: block;
     background-color: #000;
     color: var(--primary);
@@ -131,9 +136,9 @@ header{
     border-radius: 8px;
     transition: 1.1s;
 }
-.banner a:hover{
+.btn:hover{
     background-color: var(--primary);
-    color: #fff;
+    color: #000;
 }
 .banner .sliders-pointer{
     width: 100vw;
@@ -154,4 +159,111 @@ header{
 }
 .banner .pointer.active{
     background-color: var(--primary);
+}
+/*End of banner section*/
+/*Default div*/
+.default{
+    width: 100%;
+    padding: 50px 0;
+}
+.default .section-title, .default .section-desc{
+    text-align: center;
+    text-transform: capitalize;
+}
+.default .section-title{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.default .section-desc{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ccc;
+    margin-top: 1.3rem;
+    margin-bottom: 4.5rem;
+}
+.default .section-body{
+    max-width: 1140px;
+    margin: auto;
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default.light .section-title, .default.light .section-body{
+    color: #000;
+}
+.default.dark{
+    background-color: #000;
+}
+.default.dark .section-title, .default.dark .section-body{
+    color: #fff;
+}
+/*End Default div*/
+
+/*About Us*/
+.section-aboutus{
+    display: flex;
+}
+.section-aboutus-left{
+    flex: 1;
+    flex-direction: column;
+    margin: 2rem;
+}
+.section-aboutus-left p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.btn{
+   display: inline-block;
+   margin-top: 2rem;
+}
+.section-aboutus-right{
+    width: 500px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.section-aboutus-right .img{
+    width: 97%;
+    height: 97%;
+    background-image: linear-gradient(rgba(3,3,3,0.5),rgba(3,3,3,0.5)), url(../../media/Mee.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 8px rgb(3,3,3);
+    border-radius: 8px;
+}
+.section-services{
+    display: flex;
+}
+.service{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    transition: 1.2s;
+    border: 1px solid transparent;
+}
+.service img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.service:hover{
+    border: 1px solid var(--primary);
+}
+.service h4{
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.service p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--primary);
 }
