@@ -29,19 +29,19 @@ header{
 .logo{
     width: 60px;
     height: auto;
+    transition: 0.6s;
 }
 .menu{
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    transition: 1s;
 }
 .logoimg{
     width: 60px;
     height: 60px;
 }
 .logo:hover{
-    transform:rotateZ(30deg)
+    transform:rotateZ(35deg)
 }
 .menu ul, .menu li{
     list-style: none;
@@ -69,6 +69,7 @@ header{
     border-bottom: 4px solid var(--primary);
 }
 /*End Of Header*/
+/*Banner section*/
 .banner{
     height: calc(100vh - 100px);
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url('../img/bgEl.jpg');
@@ -122,8 +123,10 @@ header{
 }
 .banner .slide-area h2:hover:after{
     width: 100%;
-   box-shadow: 0 0 4px var(--primary);
+    box-shadow: 0 0 4px var(--primary);
 }
+
+/*Default Button*/
 .btn{
     display: block;
     background-color: #000;
@@ -136,6 +139,7 @@ header{
     border-radius: 8px;
     transition: 1.1s;
 }
+
 .btn:hover{
     background-color: var(--primary);
     color: #000;
@@ -161,7 +165,7 @@ header{
     background-color: var(--primary);
 }
 /*End of banner section*/
-/*Default div*/
+/*Default Section*/
 .default{
     width: 100%;
     padding: 50px 0;
@@ -228,12 +232,14 @@ header{
 .section-aboutus-right .img{
     width: 97%;
     height: 97%;
-    background-image: linear-gradient(rgba(3,3,3,0.5),rgba(3,3,3,0.5)), url(../../media/Mee.jpg);
+    background-image: url(../../media/Mee.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 8px rgb(3,3,3);
     border-radius: 8px;
+}
+.section-aboutus-right .img:hover{
+    box-shadow: 2px 2px 8px var(--primary);
 }
 .section-services{
     display: flex;
@@ -245,16 +251,25 @@ header{
     justify-content:center;
     align-items: center;
     text-align: center;
-    transition: 1.2s;
-    border: 1px solid transparent;
 }
 .service img{
     width: 90px;
     height: 90px;
     object-fit: cover;
 }
-.service:hover{
-    border: 1px solid var(--primary);
+.service::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 1.4rem;
+    background-color: var(--primary);
+    transition: 1s;
+}
+.service:hover::after{
+    content: '';
+    width: 100%;
+    box-shadow: 0 0 8px var(--primary);
 }
 .service h4{
     margin-top: 2rem;
@@ -267,3 +282,40 @@ header{
     font-size: 1.3rem;
     color: var(--primary);
 }
+/*End Services Section*/
+/*Projects Section*/
+.section-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.project-filters{
+    border: 1px groove var(--primary);
+    background-color: transparent;
+    border-radius: 2px 12px;
+    display: inline-block;
+    padding: 0 15px;
+}
+.project-filters ul, .project-filters li{
+    list-style: none;
+}
+.project-filters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #000;
+    border-left: 1px solid var(--primary);
+    border-bottom: 2px groove transparent;
+    transition: 1s;
+    cursor: pointer;
+}
+.project-filters li:hover{
+    color: var(--primary);
+}
+.project-filters li:first-child{
+    border-left: none;
+}
+/*End Projects Section*/
