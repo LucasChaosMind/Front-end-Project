@@ -314,6 +314,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .project{
     width: 280px;
@@ -340,9 +341,11 @@ header{
     align-items: center;
     flex-direction: column;
     color: #fff;
+    text-decoration: none;
 }
 .img-wrap:hover .project-info{
     display: flex;
+    box-shadow: 0 0 22px #000;
 }
 .project-info h5{
    font-size: 1.3rem;
