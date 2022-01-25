@@ -95,7 +95,41 @@ varS = varX.some(
 );
 console.log('Some: '+varS);
 
-//resume the function ->
-function(item){
-    return(item>20)? true : false;
+//Resume the function ->
+function simplefy(item){
+    return(item > 20) ? true : false;
 }
+
+//Return the first item who sastify the condiction
+varY = varX.find(
+    function(item){
+        return (item == 8) ? true : false;
+    }
+);
+console.log('Find: '+varY);
+varY = varX.findIndex(
+    function(item){
+        return (item == 8) ? true : false;
+    }
+);
+console.log('FindIndex: '+varY);
+
+let user =[
+    { id:1, name:'Lucas', age: 21 },
+    { id: 2, name:'Hellena', age: 24 },
+    { id: 3, name:'Lolly', age: 18 }
+];
+
+let userIt = user.find(
+    function(user){
+        return ( user.id == 3 )? true : false;
+    }
+);
+console.log('User It: '+userIt);
+
+let convidados = ['Joana', 'Maria', 'Paulo', 'Ana'];
+
+let podeEntrar = convidados.find((nome) => {
+ return (nome == 'Weslley' ) ? true : false;
+});
+console.log("Pode entrar: "+podeEntrar);
