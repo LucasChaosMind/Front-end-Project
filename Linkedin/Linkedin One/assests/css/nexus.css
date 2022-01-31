@@ -217,29 +217,30 @@ header{
     line-height: 2rem;
     font-weight: 400;
 }
-.btn{
-   display: inline-block;
-   margin-top: 2rem;
+.section-aboutus-left .btn{
+    margin-right: 1rem;
+    display: inline-block;
+    margin-top: 2rem;  
 }
 .section-aboutus-right{
-    width: 500px;
-    height: 480px;
+    width: 420px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    background-color: rgba(30,30,30,1);
 }
 .section-aboutus-right .img{
-    width: 97%;
-    height: 97%;
-    background-image: url(../../media/Mee.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
+    opacity: 0.7;
+    transition: 1s;
+    object-fit: cover;
 }
-.section-aboutus-right .img:hover{
-    box-shadow: 0px 0px 10px #000;
+.section-aboutus-right:hover img{
+    opacity: 0.9;
 }
 .section-services{
     display: flex;
@@ -317,7 +318,7 @@ header{
     align-items: center;
 }
 .project{
-    width: 280px;
+    width: 260px;
     height: 180px;
     margin: 10px;
 }
@@ -358,3 +359,59 @@ header{
     text-transform: capitalize;
 }
 /*End Projects Section*/
+/*Team Section*/
+.bg-team{
+    background-image: linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.7)), url('../img/Bg-chuva.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+.team .sliders{
+    width: 400vw;
+    height: 100%;
+    transition: 2s;
+}
+.team .slide{
+    width: 280px;
+    height: 100%;
+
+    height: 160px;
+    background-color: #336fe3;
+    
+    display: inline-block;  
+    margin-right: 2rem;
+}
+.team .slide-area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    z-index: 1000;
+}
+
+.team .sliders-pointer{
+    margin-top: 2.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team .pointer{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.team .pointer.active{
+    background-color: var(--primary);
+}
+/*End Team Section*/
