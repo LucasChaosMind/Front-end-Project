@@ -435,9 +435,6 @@ header{
     margin-top: 15px;
     color: #ccc;
 }
-.team-links{
-   
-}
 .team-links .fab,.team-links .fas{
     color: var(--primary);
     text-decoration: none;
