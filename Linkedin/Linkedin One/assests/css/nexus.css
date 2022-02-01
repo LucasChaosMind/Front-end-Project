@@ -224,7 +224,7 @@ header{
     margin-top: 2rem;  
 }
 .section-aboutus-right{
-    width: 420px;
+    width: 380px;
     height: auto;
     display: flex;
     align-items: center;
@@ -243,6 +243,7 @@ header{
 .section-aboutus-right:hover img{
     opacity: 0.9;
 }
+/*End about-us*/
 .section-services{
     display: flex;
 }
@@ -277,6 +278,9 @@ header{
 }
 /*End Services Section*/
 /*Projects Section*/
+.sproject{
+    min-height: 100vh;
+}
 .section-projects{
     display: flex;
     justify-content: center;
@@ -361,16 +365,16 @@ header{
 }
 /*End Projects Section*/
 /*Team Section*/
-.bg-team{
-    
+.steam{
     background-image: linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.7)), url('../img/BgTeam.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 .team{
     overflow: hidden;
-    max-width: 880px;
+    max-width: 890px;
     margin: auto;
 }
 .team .sliders{
@@ -380,11 +384,7 @@ header{
 }
 .team .slide{
     width: 280px;
-    height: 100%;
-
-    height: 160px;
-    background-color: #336fe3;
-    
+    height: 340px;
     display: inline-block;  
     margin-right: 2rem;
 }
@@ -395,11 +395,11 @@ header{
     justify-content: center;
     flex-direction: column;
     color: #fff;
-    z-index: 1000;
+    background-color: rgba(30,30,30,0.7);
+    border: 1px groove var(--primary);
 }
-
 .team .sliders-pointer{
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     height: 1.5rem;
     display: flex;
     justify-content: center;
@@ -415,5 +415,37 @@ header{
 }
 .team .pointer.active{
     background-color: var(--primary);
+}
+.team-img{
+    width: 180px;
+    height: 180px;
+    border: 1px groove rgba(30,30,30,1);
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-name{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    color: var(--primary);
+}
+.team-role{
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #ccc;
+}
+.team-links{
+   
+}
+.team-links .fab,.team-links .fas{
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1.7rem;
+    margin: 20px 10px;
+    background-color: transparent;
+}
+.team-links .fab:hover,.team-links .fas:hover{
+    transform: scale(1.3);
 }
 /*End Team Section*/
