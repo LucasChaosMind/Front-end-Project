@@ -197,6 +197,7 @@ header{
 }
 .default.dark{
     background-color: #000;
+    box-shadow: 1px 0px 4px #000;
 }
 .default.dark .section-title, .default.dark .section-body{
     color: #fff;
@@ -361,7 +362,8 @@ header{
 /*End Projects Section*/
 /*Team Section*/
 .bg-team{
-    background-image: linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.7)), url('../img/Bg-chuva.jpg');
+    
+    background-image: linear-gradient(rgba(30,30,30,0.5),rgba(30,30,30,0.7)), url('../img/BgTeam.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
