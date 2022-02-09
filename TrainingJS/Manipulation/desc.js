@@ -3,7 +3,7 @@ let people ={
     age: 21,
     sex: 'Masculino',
     social:{
-        Linkdin: 'Lucas C. Bresolino',
+        Linkedin: 'Lucas C. Bresolino',
         Instagram: 'ChaosMind.js',
         Github: 'CahosMind',
     },
@@ -12,8 +12,19 @@ let people ={
     }
 };
 
-let {name, sex:sexo, age} = people;
+//age = 21 se não haver valor ele vai colocar 21 como valor padão
+let {name, sex:sexo, age = 21} = people;
 
 console.log('Name: '+name);
 console.log('Age: '+age);
 console.log('Sexo: '+sexo);
+
+//Modo 1
+let {Linkedin} = people.social
+
+console.log('Linkedin: '+Linkedin);
+
+//Modo 2
+let {name:meuNome,age:idade, social:{Github}} = people
+
+console.log(meuNome+' '+idade+' '+Github);
