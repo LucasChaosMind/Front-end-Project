@@ -25,3 +25,5 @@ document.getElementById('a9').innerHTML = nome[3];
 //Divide a string original em um array com base na string informada
 let rest = nome.split(' ');
 alert('Array: ' + rest);
+
+//String padStart and padEnd
