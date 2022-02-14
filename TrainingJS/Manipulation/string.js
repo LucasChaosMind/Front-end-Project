@@ -27,3 +27,12 @@ let rest = nome.split(' ');
 alert('Array: ' + rest);
 
 //String padStart and padEnd
+
+let telefone = '5';
+
+//Prenche o fim da string com um valor padrão até o tamanho selecionado 
+console.log(telefone.padEnd(9 , '*'));
+
+
+//Prenche o Começo da string com um valor padrão até o tamanho selecionado
+console.log(telefone.padStart(9, '*'));
