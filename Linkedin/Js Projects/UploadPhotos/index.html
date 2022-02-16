@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Photos</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/normalize.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="assests/img/logo.png"/></div>
+            <ul>
+                <li><a href="">Github</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Portifolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2 class="titulo">Photos com JS</h2>
+            <div class="insertArea">
+                <div class="add-photo">
+                    <a onclick="init()"><img src="assests/img/logo.png"/></a>
+                    <input id="uploadPhoto" type="file" accept="image/*" id="image" hidden>
+                </div>
+                <div class="add-desc">
+                    <div class="titulo">
+                        <input type="text" id="photo-title" placeholder="Titulo:" maxlength="30"/>
+                    </div>
+                    <div class="desc">
+                        <input type="text" id="photo-title"  placeholder="Descrição:" maxlength="60"/>
+                    </div>
+                </div>
+                <div class="salvar">
+                    <a  onclick="startUp()"><img src=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="assests/js/app.js"></script>
+</body>
+</html>

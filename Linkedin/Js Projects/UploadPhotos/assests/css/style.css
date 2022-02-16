@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300&display=swap');
+:root{
+    --colorOs: #1C658C;
+    --colorUp: #398AB9;
+    --colorBack: #D8D2CB;
+}
+*{
+    font-size: 10px;
+    font-family: 'Roboto Serif', arial ,sans-serif;
+}
+header nav{
+    background-color: #101010;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    margin-left: 40px;
+}
+nav .logo img{
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+}
+nav .logo img:hover{
+    transform:rotateZ(33deg);
+}
+nav ul{
+    list-style: none;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around; 
+}
+nav ul li{
+    margin: 0 30px;
+    display: flex;
+ }
+nav ul li a{
+    font-size: 1.8rem;
+    padding: 4px 12px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2px 0px 12px;
+}
+nav ul li a::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: 1s;
+    background-color: #fff;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    box-shadow: 0 0 4px var(--colorUp),
+                0 0 6px var(--colorUp),
+                0 0 10px var(--colorUp);
+}

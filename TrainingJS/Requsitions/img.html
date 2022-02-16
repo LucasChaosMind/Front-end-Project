@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Upload</title>
+    <title>Imag</title>
 </head>
 <body>
-    <input type="file" multiple class="upFile"/>
-    <button onclick="upFile()">Enviar</button>
-    <img src=""/>
-    <script src="file.js"></script>
+    <input type="file" accept="image/*" id="img"/>
+    <button onclick="imgWrapper()">Upload</button>
+
+    <div id="area"></div>
+
+    <script src="img.js"></script>
 </body>
 </html>
