@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300&display=swap');
 :root{
-    --colorOs: #1C658C;
-    --colorUp: #398AB9;
-    --colorBack: #D8D2CB;
+    --colorUp: #39ff14;
+    --colorOS: #3de7f2;
 }
 *{
     font-size: 10px;
     font-family: 'Roboto Serif', arial ,sans-serif;
+    margin: 0;
+    padding: 0;
 }
 header nav{
     background-color: #101010;
@@ -51,11 +52,94 @@ nav ul li a::after{
     height: 2px;
     width: 0;
     transition: 1s;
-    background-color: #fff;
+    background-color: var(--colorUp);
 }
 nav ul li a:hover::after{
     width: 100%;
     box-shadow: 0 0 4px var(--colorUp),
-                0 0 6px var(--colorUp),
-                0 0 10px var(--colorUp);
+                0 0 6px var(--colorUp);
 }
+.hero{
+    height: calc(100vh - 90px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/bgg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    color: var(--colorUp);
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 40px auto;
+    border-bottom: 2px groove var(--colorUp);
+}
+.insertArea{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.add-photo a{
+    width: 120px;
+    height: auto;
+    border: 2px solid var(--colorUp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 16px;
+    cursor: pointer;
+}
+.add-photo a img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.add-desc{
+    height: auto;
+    width: 420px;
+    padding: 4px;
+    border-radius: 4px 12px;
+    border: 2px solid var(--colorUp);
+    background-color: #101010;
+}
+.add-desc #photo-title{
+    width: 100%;
+    height: 25px;
+    background-color: #101010;
+    color: var(--colorUp);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+#photo-title::placeholder {
+    color: var(--colorUp);
+}
+.add-desc #photo-desc{
+    width: 100%;
+    height: 60px;
+    resize: none;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #101010;
+    border: none ;
+    outline: none;
+}
+.insertArea .salvar a{
+    width: 120px;
+    height: 60px;
+    border: 2px solid var(--colorUp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px 16px;
+    cursor: pointer;
+}
+
+
