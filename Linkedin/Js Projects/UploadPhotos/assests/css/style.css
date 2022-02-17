@@ -2,15 +2,20 @@
 :root{
     --colorUp: #39ff14;
     --colorOS: #3de7f2;
+    --backBg: #101010;
 }
 *{
     font-size: 10px;
     font-family: 'Roboto Serif', arial ,sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: var(--backBg);
 }
 header nav{
-    background-color: #101010;
+    background-color: var(--backBg);
     height: 90px;
     width: 100%;
     display: flex;
@@ -105,17 +110,18 @@ nav ul li a:hover::after{
     padding: 4px;
     border-radius: 4px 12px;
     border: 2px solid var(--colorUp);
-    background-color: #101010;
+    background-color: var(--backBg);
 }
 .add-desc #photo-title{
     width: 100%;
     height: 25px;
-    background-color: #101010;
+    background-color: var(--backBg);
     color: var(--colorUp);
     font-size: 1.4rem;
     letter-spacing: 2px;
     text-align: center;
     border: none;
+    border-bottom: 2px groove var(--colorUp);
     outline: none;
 }
 #photo-title::placeholder {
@@ -127,9 +133,13 @@ nav ul li a:hover::after{
     resize: none;
     font-size: 1.4rem;
     color: #fff;
-    background-color: #101010;
+    background-color: var(--backBg);
     border: none ;
     outline: none;
+    text-align: center;
+}
+#photo-desc::placeholder{
+    color: var(--colorUp);
 }
 .insertArea .salvar a{
     width: 120px;
@@ -141,5 +151,59 @@ nav ul li a:hover::after{
     border-radius: 4px 16px;
     cursor: pointer;
 }
+/*Section photoUp*/
+.photoUp{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('../img/bg-wrapper.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 5px solid var(--backBg);
+    box-shadow:  0 -4px 12px var(--backBg);
+}
+.container-photos{
+    min-height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+.photoWrapper{
+    height: 240px;
+    width: 220px;
+    margin: 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px var(--backBg),
+                4px 4px 12px var(--backBg),
+                5px 5px 14px var(--backBg);
 
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.photoWrapper .title-photo{
+    color: var(--colorUp);
+    width: 100%;
+    font-size: 1.6rem;
+    letter-spacing: 1.1px;
+    word-wrap: break-word;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3));
+    border-radius: 4px;
+}
+.photoWrapper p{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    margin: 12px 0;
+}
 
