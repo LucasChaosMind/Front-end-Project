@@ -187,6 +187,9 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .photoWrapper .title-photo{
     color: var(--colorUp);

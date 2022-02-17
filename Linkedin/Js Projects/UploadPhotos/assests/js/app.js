@@ -1,21 +1,34 @@
-function init(){
+let index = 0;
+let url = '';
+
+function init() {
     let up = document.querySelector('#uploadPhoto');
     up.click();
 }
+
 function startUp(){
-    let file = document.querySelector('#uploadPhoto').files;
+    let file = document.querySelector('#uploadPhoto').files[0];
     console.log(file.length);
     
-    let url = URL.createObjectURL(file[0]);
+    url = URL.createObjectURL(file);
     console.log(url);
     
     let title = document.querySelector('#photo-title').value;
-    console.log(title);
+    let desc = document.querySelector('#photo-desc').value;
 
-    let desc = document.querySelector('')
-
-    html = ``;
+    index++;
+    let html = `<div class="photoWrapper" id="s${index}"><h4 class="title-photo">${title}</h4><p>${desc}</p></div>`;
     
-    document.getElementById('area').appendChild(img);
+    document.querySelector('.container-photos').innerHTML += html;
     
+    setTimeout(insert,3000);
+    
+}
+function insert(){
+    let css =`url("${url}")`;
+    let id = 's'+index;
+    
+    console.log('CSS: '+css+' Id: '+id);
+    let doc = document.getElementById(id);
+    doc.style.backgroundImage = css;
 }
