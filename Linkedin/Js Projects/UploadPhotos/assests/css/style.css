@@ -45,7 +45,7 @@ nav ul li{
     display: flex;
  }
 nav ul li a{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 4px 12px;
     text-decoration: none;
     color: #fff;
@@ -58,11 +58,10 @@ nav ul li a::after{
     width: 0;
     transition: 1s;
     background-color: var(--colorUp);
+    
 }
 nav ul li a:hover::after{
     width: 100%;
-    box-shadow: 0 0 4px var(--colorUp),
-                0 0 6px var(--colorUp);
 }
 .hero{
     height: calc(100vh - 90px);
@@ -79,7 +78,10 @@ nav ul li a:hover::after{
     font-size: 2rem;
     font-weight: 300;
     margin: 40px auto;
-    border-bottom: 2px groove var(--colorUp);
+    padding: 2px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 8px 2px;
+    border: 1px groove rgba(0,0,0,0.4);
 }
 .insertArea{
     height: 50vh;
@@ -128,15 +130,16 @@ nav ul li a:hover::after{
     color: var(--colorUp);
 }
 .add-desc #photo-desc{
+    color: #fff;
     width: 100%;
     height: 60px;
-    resize: none;
     font-size: 1.4rem;
-    color: #fff;
+    text-align: center;
+    margin-top: 8px;
     background-color: var(--backBg);
+    resize: none;
     border: none ;
     outline: none;
-    text-align: center;
 }
 #photo-desc::placeholder{
     color: var(--colorUp);
@@ -162,7 +165,6 @@ nav ul li a:hover::after{
     background-size: cover;
     background-repeat: no-repeat;
     border-top: 5px solid var(--backBg);
-    box-shadow:  0 -4px 12px var(--backBg);
 }
 .container-photos{
     min-height: 45vh;
@@ -172,7 +174,6 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    
 }
 .photoWrapper{
     height: 240px;
@@ -184,7 +185,7 @@ nav ul li a:hover::after{
                 5px 5px 14px var(--backBg);
 
     padding: 0 8px;
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     background-position: center;
