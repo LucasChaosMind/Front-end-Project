@@ -84,7 +84,7 @@ nav ul li a:hover::after{
     border: 1px groove rgba(0,0,0,0.4);
 }
 .insertArea{
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
     display: flex;
@@ -173,6 +173,7 @@ nav ul li a:hover::after{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: auto;
 }
 .photoWrapper{
@@ -209,5 +210,21 @@ nav ul li a:hover::after{
     font-size: 1.3rem;
     word-wrap: break-word;
     margin: 12px 0;
+}
+@media (max-width: 420px) {
+    header{
+        display: none;
+    }
+    .insertArea{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .add-desc{
+        width: 75%;
+    }
+    .container-photos{
+        flex-direction: column;
+    }
+        
 }
 
